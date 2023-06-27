@@ -1,4 +1,6 @@
 #include "main.h"
+
+int _print_num(int num);
 /**
  * _printf - produces output according to format
  * @format: number of arguments passed.
@@ -39,6 +41,13 @@ int _printf(const char *format, ...)
 			{
 				write(1, &format[i], 1);
 				printed++;
+			}
+
+			else if (format[i] == 'd' || format[i] == 'i')
+			{
+				int num = va_arg(ap, int);
+
+				printed += print_integer(num);
 			}
 		}
 		i++;
