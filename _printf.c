@@ -49,6 +49,11 @@ int _printf(const char *format, ...)
 
 				printed += print_integer(num);
 			}
+			else if (format[i] == 'b')
+			{
+				int num = va_arg(ap, int);
+				printed += _print_binary(num);
+			}
 		}
 		i++;
 	}

@@ -17,3 +17,7 @@ Task: 1. Education is when you read the fine print. Experience is what you get i
 > Handle the following conversion specifiers:
 	> d
 	> i
+
+Task: 2. With a face like mine, I do better in print
+> Handle the following custom conversion specifiers:
+  b: the unsigned int argument is converted to binary

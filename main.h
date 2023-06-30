@@ -5,4 +5,5 @@
 int _printf(const char *format, ...);
 int _strlen(char *s);
 int print_integer(int num);
+int _print_binary(int num);
 #endif
